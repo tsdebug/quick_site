@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function IntegrationsSection() {
     return (
-        <section>
+        <section id="integration">
             <div className="bg-muted dark:bg-background py-24 md:py-32">
                 <div className="mx-auto max-w-5xl px-6">
                     <div className="grid items-center sm:grid-cols-2">

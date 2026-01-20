@@ -5,12 +5,15 @@ import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { cn } from '@/lib/utils'
+import { ThemeToggleButton } from '@/components/ThemeToggleButton'
 
 const menuItems = [
-    { name: 'Features', href: '#link' },
-    { name: 'Solution', href: '#link' },
-    { name: 'Pricing', href: '#link' },
-    { name: 'About', href: '#link' },
+    { name: 'Home', href: '#hero' },
+    { name: 'Features', href: '#features' },
+    { name: 'Integration', href: '#integration' },
+    { name: 'Stats', href: '#stats' },
+    { name: 'Team', href: '#team' },
+    { name: 'FAQs', href: '#faq' },
 ]
 
 export const HeroHeader = () => {
@@ -102,6 +105,7 @@ export const HeroHeader = () => {
                                         <span>Get Started</span>
                                     </Link>
                                 </Button>
+                                <ThemeToggleButton />
                             </div>
                         </div>
                     </div>
