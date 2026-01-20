@@ -19,7 +19,7 @@ const transitionVariants = {
             filter: 'blur(0px)',
             y: 0,
             transition: {
-                type: 'spring',
+                type: 'spring' as const,
                 bounce: 0.3,
                 duration: 1.5,
             },
@@ -31,7 +31,7 @@ export default function HeroSection() {
     return (
         <>
             <HeroHeader />
-            <main id="hero" className="overflow-hidden">
+            <main className="overflow-hidden">
                 <div
                     aria-hidden
                     className="absolute inset-0 isolate hidden opacity-65 contain-strict lg:block">
@@ -39,7 +39,7 @@ export default function HeroSection() {
                     <div className="h-320 absolute left-0 top-0 w-60 -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.06)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)] [translate:5%_-50%]" />
                     <div className="h-320 -translate-y-87.5 absolute left-0 top-0 w-60 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
                 </div>
-                <section>
+                <section id="hero" className="scroll-mt-20">
                     <div className="relative pt-24 md:pt-36">
                         <AnimatedGroup
                             variants={{
@@ -59,7 +59,7 @@ export default function HeroSection() {
                                         opacity: 1,
                                         y: 0,
                                         transition: {
-                                            type: 'spring',
+                                            type: 'spring' as const,
                                             bounce: 0.3,
                                             duration: 2,
                                         },
@@ -140,7 +140,7 @@ export default function HeroSection() {
                                             asChild
                                             size="lg"
                                             className="rounded-xl px-5 text-base">
-                                            <Link href="#link">
+                                            <Link href="#integration">
                                                 <span className="text-nowrap">Start Building</span>
                                             </Link>
                                         </Button>
@@ -151,8 +151,8 @@ export default function HeroSection() {
                                         size="lg"
                                         variant="ghost"
                                         className="h-10.5 rounded-xl px-5">
-                                        <Link href="#link">
-                                            <span className="text-nowrap">Request a demo</span>
+                                        <Link href="#stats">
+                                            <span className="text-nowrap">View Stats</span>
                                         </Link>
                                     </Button>
                                 </AnimatedGroup>
