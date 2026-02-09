@@ -1,3 +1,11 @@
+# ⚡ Quick Site
+
+A mini-project built to demonstrate how to create high-quality, responsive websites in minutes using pre-designed UI components and blocks. This project serves as a learning template for rapid prototyping using **Next.js**, **Tailwind CSS**, **Shadcn UI**, and **Tailark**.
+
+## 🚀 Overview
+
+The primary objective of this repository is to master the **"Speed-to-Web"** workflow. Instead of building every section from scratch, this project leverages production-ready blocks to assemble a professional landing page in a fraction of the time.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
